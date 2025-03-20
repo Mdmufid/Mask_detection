@@ -1,0 +1,7 @@
+Flask
+Flask-CORS
+opencv-python
+numpy
+scikit-learn
+tensorflow
+gunicorn
