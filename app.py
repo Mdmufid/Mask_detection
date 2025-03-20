@@ -5,6 +5,10 @@ import os
 from sklearn.svm import SVC
 from sklearn.decomposition import PCA
 from flask_cors import CORS
+import gdown
+url = "https://drive.google.com/file/d/1tFrMafXv94Ya7rOf_d96-tcwdNE3y12Y/view?usp=drive_link"
+output = "mask_detector_model.h5"
+gdown.download(url, output, quiet=False)
 
 app = Flask(__name__)
 CORS(app)  # Allows frontend to connect
